@@ -15,7 +15,8 @@ export default function Signup() {
   const [phone,setPhone] = useState('')
   const [password,setPassword] = useState('')
   const [err,setErr] = useState(null)
-  const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailPattern =/^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+\.[a-zA-Z.]{2,})$/
+
 
   const handleSubmit=(e)=>{
 

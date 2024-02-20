@@ -1,10 +1,9 @@
-import React from 'react';
+import React,{ useContext, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useContext, useEffect } from 'react';
 import {AuthContext} from './store/FirebaseContext'
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from './firebase/config';
+import {onAuthStateChanged} from 'firebase/auth';
+import {auth} from './firebase/config';
 import Post from './store/PostContext'
 import Home from './Pages/Home';
 import Signup from './Pages/Signup'
